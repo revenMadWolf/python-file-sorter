@@ -2,11 +2,14 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>731</width>
+    <width>727</width>
     <height>606</height>
    </rect>
   </property>
@@ -14,54 +17,110 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="btn_select_folder">
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>350</y>
-      <width>101</width>
-      <height>26</height>
+      <x>20</x>
+      <y>9</y>
+      <width>691</width>
+      <height>541</height>
      </rect>
     </property>
-    <property name="text">
-     <string>Select Folder</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btn_organize">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>350</y>
-      <width>131</width>
-      <height>26</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Organize Files</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="lbl_path">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>180</y>
-      <width>261</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>No folder selected</string>
-    </property>
-   </widget>
-   <widget class="QTextEdit" name="txt_log">
-    <property name="geometry">
-     <rect>
-      <x>233</x>
-      <y>243</y>
-      <width>271</width>
-      <height>61</height>
-     </rect>
-    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>1</number>
+       </property>
+       <property name="leftMargin">
+        <number>30</number>
+       </property>
+       <property name="rightMargin">
+        <number>30</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="checkBox">
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Add other file</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="lbl_path">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="text">
+          <string>No folder selected</string>
+         </property>
+         <property name="margin">
+          <number>15</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="txt_log">
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_select_folder">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Select Folder</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_organize">
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>Organize Files</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -69,7 +128,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>731</width>
+     <width>727</width>
      <height>33</height>
     </rect>
    </property>
