@@ -98,7 +98,7 @@ python main.py
 
 ## 📸 Screenshots
 
-*(Add screenshots of your UI here later)*
+*Pending*
 
 ---
 
@@ -112,6 +112,6 @@ This project was built to practice:
 
 ---
 
-## 📜 License
+## 📜 Author
 
-This project is open-source and available under the MIT License.
+* Thisew Nethmira

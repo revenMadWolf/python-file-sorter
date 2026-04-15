@@ -1,4 +1,4 @@
-from PySide6.QtWidgets import QApplication,QFileDialog
+from PySide6.QtWidgets import QApplication,QFileDialog,QTableWidgetItem
 from PySide6.QtUiTools import QUiLoader
 from PySide6.QtCore import QFile
 import functions
@@ -21,6 +21,18 @@ def organize_files():
         for change in changes:
             window.txt_log.append(change)
 
+def load_table():
+    data = functions.load_file_types()
+
+    table = window.table_categories
+    table.setRowCount(0)
+
+    for row, (category, extensions) in enumerate(data.items()):
+        table.insertRow(row)
+
+        table.setItem(row, 0, QTableWidgetItem(category))
+        table.setItem(row, 1, QTableWidgetItem(", ".join(extensions)))
+
 
 app = QApplication([])
 loader = QUiLoader()
@@ -29,7 +41,8 @@ ui_file.open(QFile.ReadOnly)
 
 window = loader.load(ui_file)
 window.setWindowTitle("File Manager")
-window.setGeometry(800,500,800,500)
+window.setGeometry(0,0,768,600)
+load_table()
 
 ui_file.close()
 window.show()
