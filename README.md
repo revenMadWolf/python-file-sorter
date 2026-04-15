@@ -1,114 +1,138 @@
-# 📁 Smart File Organizer (GUI)
+# 📁 Python File Sorter
 
-A simple and efficient desktop application that automatically organizes files in a selected folder based on their file types.
+A desktop file organizer built with **Python** and **PySide6** that automatically sorts files into categories based on their extensions.
 
-Built using **Python** and **PySide6 (Qt Designer)**.
+This project was created as a practical tool and a portfolio project to demonstrate GUI development, file handling, and clean code structure.
 
 ---
 
 ## 🚀 Features
 
-* 📂 Select any folder from your system
-* 🗂 Automatically sort files into categories:
+* 📂 Select any folder and organize its files
+* 🧠 Custom categories (Images, Documents, Videos, etc.)
+* 📝 Editable categories via GUI
+* 🔁 Duplicate handling:
 
-  * Images
-  * Documents
-  * Videos
-  * Audio
-  * Archives
-  * Others
-* 🧾 Real-time log output showing file movements
-* 🖥 Clean GUI built with Qt Designer
-* ⚡ Fast and lightweight
+  * Skip duplicates
+  * Or auto-rename them
+* 📦 Optional **"Others"** folder for uncategorized files
+* 💾 Saves settings using JSON (`file_types.json`)
+* 🖥️ Built with Qt Designer + PySide6
 
 ---
 
-## 🛠 Tech Stack
+## 📸 Preview
 
-* **Python 3**
-* **PySide6** (GUI framework)
-* **Qt Designer** (UI design)
-* **os / shutil** (file handling)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
 
 ---
 
-## 📦 Project Structure
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/revenMadWolf/python-file-manager.git
+cd python-file-manager
+```
+
+### 2. Create a virtual environment (recommended)
+
+```bash
+python -m venv .venv
+```
+
+### 3. Activate it
+
+**Windows:**
+
+```bash
+.venv\Scripts\activate
+```
+
+**Linux/Mac:**
+
+```bash
+source .venv/bin/activate
+```
+
+### 4. Install dependencies
+
+```bash
+pip install PySide6
+```
+
+---
+
+## ▶️ Usage
+
+Run the app:
+
+```bash
+python main.py
+```
+
+### Steps:
+
+1. Click **"Select Folder"**
+2. Choose a directory
+3. (Optional):
+
+   * Enable **Rename duplicates**
+   * Enable **Add other file**
+4. Click **"Organize Files"**
+
+---
+
+## 🧩 Custom Categories
+
+Click **"Customize"** to define file types.
+
+### Example:
 
 ```
-python-file-organizer/
+Images → .jpg, .png, .jpeg
+Documents → .pdf, .txt, .docx
+```
+
+These are saved in:
+
+```
+file_types.json
+```
+
+---
+
+## 📂 Project Structure
+
+```
+python-file-manager/
 │
-├── main.py          # GUI logic
-├── functions.py     # File organizing logic
-├── main.ui          # UI layout (Qt Designer)
+├── main.py              # GUI logic (PySide6)
+├── functions.py         # File organization logic
+├── main.ui              # UI design (Qt Designer)
+├── file_types.json      # Saved categories
 └── README.md
 ```
 
 ---
 
-## ▶️ How to Run
-
-1. Clone the repository:
-
-```
-git clone https://github.com/revenMadWolf/python-file-organizer.git
-cd python-file-organizer
-```
-
-2. Install dependencies:
-
-```
-pip install pyside6
-```
-
-3. Run the application:
-
-```
-python main.py
-```
-
----
-
-## 🧠 How It Works
-
-* The user selects a folder
-* The program scans all files inside it
-* Files are categorized based on their extensions
-* Corresponding folders are created automatically
-* Files are moved into their respective folders
-
----
-
 ## ⚠️ Notes
 
-* Existing folders are reused (no duplicates created)
-* Files with duplicate names may be skipped
-* It is recommended to test on a non-critical folder first
+* File extensions are matched case-insensitively
+* Extensions needs to be typed in with "." in front. (✅.png, .mp3   ❌png, mp3)
+* Existing files are not overwritten unless rename is enabled
+* Works best on Windows (tested environment)
 
 ---
 
-## 🔮 Future Improvements
+## 🧠 What I Learned
 
-* [ ] Handle duplicate file names (auto-rename)
-* [ ] Allow users to create custom file categories with their own extensions
-* [ ] Progress bar for large folders
-* [ ] Undo functionality
-* [ ] Drag & drop folder support
-
----
-
-## 📸 Screenshots
-
-*Pending*
-
----
-
-## 💡 Motivation
-
-This project was built to practice:
-
-* GUI development with PySide6
-* File system automation
-* Writing clean, modular Python code
+* Building GUI apps with PySide6
+* Working with file systems (`os`, `shutil`)
+* JSON-based configuration handling
+* Structuring a real-world Python project
 
 ---
 

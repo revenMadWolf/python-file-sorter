@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0906dd97-2e28-4e15-97c7-3a498841cafe" name="Changes" comment="">
+    <list default="true" id="0906dd97-2e28-4e15-97c7-3a498841cafe" name="Changes" comment="Now you can edit,remove,add your own categories">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_types.json" beforeDir="false" afterPath="$PROJECT_DIR$/file_types.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.ui" beforeDir="false" afterPath="$PROJECT_DIR$/main.ui" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +71,19 @@
       <option name="presentableId" value="Default" />
       <updated>1775931771745</updated>
     </task>
+    <task id="LOCAL-00001" summary="Now you can edit,remove,add your own categories">
+      <option name="closed" value="true" />
+      <created>1776256977478</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1776256977478</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Now you can edit,remove,add your own categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Now you can edit,remove,add your own categories" />
   </component>
 </project>

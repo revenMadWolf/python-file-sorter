@@ -66,7 +66,7 @@ ui_file = QFile("main.ui")
 ui_file.open(QFile.ReadOnly)
 
 window = loader.load(ui_file)
-window.setWindowTitle("File Manager")
+window.setWindowTitle("File Sorter")
 # window.setGeometry(0,0,740,600)
 window.setFixedSize(window.size())
 
