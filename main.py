@@ -51,7 +51,7 @@ def save_category():
         column = table.item(row,0)
         record = table.item(row,1)
 
-        if column.text() and record.text():
+        if column and record:
             data_dic[column.text()] = [rec.strip() for rec in (record.text()).split(",") if rec.strip()]
     functions.save_file_types(data_dic)
     load_table()
