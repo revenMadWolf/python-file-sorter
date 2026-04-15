@@ -23,8 +23,8 @@ This project was created as a practical tool and a portfolio project to demonstr
 
 ## 📸 Preview
 
-![img_1.png](img_1.png)
-![img_2.png](img_2.png)
+![img_1.png](preview/img_1.png)
+![img_2.png](preview/img_2.png)
 
 ---
 
