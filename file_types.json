@@ -1,1 +1,1 @@
-{"Images": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".avif"], "Documents": [".pdf", ".docx", ".txt"], "Videos": [".mp4", ".mkv", ".mpeg", ".ogg"], "Audio": [".mp3", ".wav"], "Archives": [".zip", ".rar", ".7z"]}
+{"Images": [".jpg", ".jpeg", ".png", ".gif", ".webp", ".avif"], "Documents": [".pdf", ".docx", ".txt"], "Videos": [".mp4", ".mkv", ".mpeg", ".ogg"], "Audio": [".mp3", ".wav"], "Archives": [".zip", ".rar", ".7z"], "Applications": [".exe"]}

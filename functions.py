@@ -55,7 +55,7 @@ def move_file(path, key, is_rename_active):
     destination = os.path.join(directory, name)
 
     if not os.path.exists(destination):
-        shutil.move(path, destination)
+        shutil.move(path, directory)
         return f"{name} Moved to {directory}"
 
     elif not is_rename_active:

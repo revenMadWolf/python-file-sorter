@@ -18,6 +18,7 @@ def organize_files():
     global selected_file
     is_other_active = window.check_other.isChecked()
     is_rename_active = window.check_rename.isChecked()
+    window.txt_log.clear()
     if selected_file:
         changes = functions.organize_files(selected_file,is_other_active,is_rename_active)
         for change in changes:
@@ -52,7 +53,7 @@ def save_category():
         record = table.item(row,1)
 
         if column and record:
-            data_dic[column.text()] = [rec.strip() for rec in (record.text()).split(",") if rec.strip()]
+            data_dic[column.text().strip()] = [rec.strip() for rec in (record.text()).split(",") if rec.strip()]
     functions.save_file_types(data_dic)
     load_table()
 
