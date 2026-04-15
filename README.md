@@ -34,7 +34,7 @@ This project was created as a practical tool and a portfolio project to demonstr
 
 ```bash
 git clone https://github.com/revenMadWolf/python-file-sorter.gits
-cd python-file-manager
+cd python-file-sorter
 ```
 
 ### 2. Create a virtual environment (recommended)
@@ -107,7 +107,7 @@ file_types.json
 ## 📂 Project Structure
 
 ```
-python-file-manager/
+python-file-sorter/
 │
 ├── main.py              # GUI logic (PySide6)
 ├── functions.py         # File organization logic
@@ -121,7 +121,7 @@ python-file-manager/
 ## ⚠️ Notes
 
 * File extensions are matched case-insensitively
-* Extensions needs to be typed in with "." in front. (✅.png, .mp3   ❌png, mp3)
+* Extensions needs to be typed in with "." in front. (✅.png, .mp3 | ✅.PNG, .MP3 | ❌png, mp3)
 * Existing files are not overwritten unless rename is enabled
 * Works best on Windows (tested environment)
 
