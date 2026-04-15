@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0906dd97-2e28-4e15-97c7-3a498841cafe" name="Changes" comment="solved a bug where leaving empty slots crashing the app">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file_types.json" beforeDir="false" afterPath="$PROJECT_DIR$/file_types.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions.py" afterDir="false" />
-    </list>
+    <list default="true" id="0906dd97-2e28-4e15-97c7-3a498841cafe" name="Changes" comment="solved a bug where it caused crashes when the user accidentally types a space in the categories &#10;&#10;now log area clears when the organize button is clicked" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776259001195</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="solved a bug where it caused crashes when the user accidentally types a space in the categories &#10;&#10;now log area clears when the organize button is clicked">
+      <option name="closed" value="true" />
+      <created>1776259852365</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1776259852365</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -116,6 +120,7 @@
     <MESSAGE value="changed the readme" />
     <MESSAGE value="added preview images" />
     <MESSAGE value="solved a bug where leaving empty slots crashing the app" />
-    <option name="LAST_COMMIT_MESSAGE" value="solved a bug where leaving empty slots crashing the app" />
+    <MESSAGE value="solved a bug where it caused crashes when the user accidentally types a space in the categories &#10;&#10;now log area clears when the organize button is clicked" />
+    <option name="LAST_COMMIT_MESSAGE" value="solved a bug where it caused crashes when the user accidentally types a space in the categories &#10;&#10;now log area clears when the organize button is clicked" />
   </component>
 </project>
