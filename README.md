@@ -33,7 +33,7 @@ This project was created as a practical tool and a portfolio project to demonstr
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/revenMadWolf/python-file-manager.git
+git clone https://github.com/revenMadWolf/python-file-sorter.gits
 cd python-file-manager
 ```
 
