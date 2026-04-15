@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>732</width>
-    <height>627</height>
+    <width>740</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -23,11 +23,14 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QStackedWidget" name="page_main_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
     <property name="geometry">
      <rect>
-      <x>-90</x>
-      <y>-80</y>
+      <x>-60</x>
+      <y>-40</y>
       <width>831</width>
       <height>651</height>
      </rect>
@@ -39,13 +42,16 @@
      <widget class="QWidget" name="horizontalLayoutWidget_2">
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>80</y>
+        <x>80</x>
+        <y>60</y>
         <width>691</width>
         <height>541</height>
        </rect>
       </property>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="rightMargin">
+        <number>38</number>
+       </property>
        <item>
         <layout class="QVBoxLayout" name="verticalLayout_3">
          <property name="spacing">
@@ -68,14 +74,14 @@
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox_2">
+          <widget class="QCheckBox" name="check_rename">
            <property name="text">
             <string>Rename duplicates</string>
            </property>
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="checkBox">
+          <widget class="QCheckBox" name="check_other">
            <property name="autoFillBackground">
             <bool>false</bool>
            </property>
@@ -143,19 +149,25 @@
      <widget class="QWidget" name="verticalLayoutWidget">
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>90</y>
+        <x>70</x>
+        <y>50</y>
         <width>721</width>
         <height>561</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="rightMargin">
+        <number>8</number>
+       </property>
        <item>
         <widget class="QTableWidget" name="table_categories">
          <property name="columnCount">
           <number>2</number>
          </property>
          <attribute name="horizontalHeaderVisible">
+          <bool>true</bool>
+         </attribute>
+         <attribute name="horizontalHeaderStretchLastSection">
           <bool>true</bool>
          </attribute>
          <column>
@@ -171,7 +183,25 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QPushButton" name="btn_slot">
+         <property name="text">
+          <string>Add Slot</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_save">
+         <property name="text">
+          <string>Save</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btn_back">
+         <property name="text">
+          <string>Back</string>
+         </property>
+        </widget>
        </item>
       </layout>
      </widget>
@@ -183,7 +213,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>732</width>
+     <width>740</width>
      <height>33</height>
     </rect>
    </property>

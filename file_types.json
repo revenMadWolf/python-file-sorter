@@ -2,5 +2,5 @@
     "Documents": [".pdf", ".docx", ".txt"],
     "Videos": [".mp4", ".mkv",".mpeg",".ogg"],
     "Audio" : [".mp3",".wav"],
-    "Archives":[".zip",".rar",".7z"],
-    "Others": []}
+    "Archives":[".zip",".rar",".7z"]
+    }

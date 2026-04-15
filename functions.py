@@ -16,9 +16,9 @@ def load_file_types(path="file_types.json"):
 
 def save_file_types(data_types,path="file_types.json"):
     with open(path,"w") as f:
-        json.dump(f,data_types)
+        json.dump(data_types,f)
 
-def organize_files(folder):
+def organize_files(folder,is_other_active,is_rename_active):
     changes = []
     file_types = load_file_types()
     files = os.listdir(folder)
@@ -36,25 +36,47 @@ def organize_files(folder):
 
         for key, exe in file_types.items():
             if extension.lower() in exe:
-                changes.append(move_file(path, key))
+                changes.append(move_file(path, key,is_rename_active))
                 if file in other_files:
                     other_files.remove(file)
                 break
-
-    for other in other_files:
-        changes.append(move_file(os.path.join(folder, other), "Others"))
+    if is_other_active:
+        for other in other_files:
+            changes.append(move_file(os.path.join(folder, other), "Others",is_rename_active))
 
     return changes
 
 
-def move_file(path,key):
-    root,name = os.path.split(path)
-    directory = os.path.join(root,key)
-    os.makedirs(directory,exist_ok=True)
-    direct,file_name = os.path.split(path)
-    try:
-        shutil.move(path,directory)
-        return f"{file_name} Moved to {directory}"
-    except shutil.Error:
-        return f"{file_name} already exist"
+def move_file(path, key, is_rename_active):
+    root, name = os.path.split(path)
+    directory = os.path.join(root, key)
+    os.makedirs(directory, exist_ok=True)
+
+    destination = os.path.join(directory, name)
+
+    if not os.path.exists(destination):
+        shutil.move(path, destination)
+        return f"{name} Moved to {directory}"
+
+    elif not is_rename_active:
+        return f"{name} already exists"
+
+    else:
+        count = 1
+        base, ext = os.path.splitext(name)
+
+        while True:
+            new_name = f"{base}({count}){ext}"
+            new_destination = os.path.join(directory, new_name)
+
+            if not os.path.exists(new_destination):
+                shutil.move(path, new_destination)
+                return f"{name} renamed to {new_name} and moved to {directory}"
+
+            count += 1
+
+
+
+
+
 
